@@ -6,15 +6,52 @@ The function will add the following content inside the paragraph with the id of 
 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
 
+more.addEventListener('click',moreContent);
 
+more.style.display = 'none'
+more.innerHTML = bacon;
+function moreContent(){
+    if(more.style.display === 'block'){
+        more.style.display='none';
+    }else{
+        more.style.display="block"
+    }
+}
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
+less.addEventListener('click', lessContent);
+
+less.style.display= 'none'
+function lessContent(){
+    if(less.style.display ==='block'){
+        less.style.display='none'
+    }else{
+        less.style.display='block'
+    }
+}
+// noMore.innerHTML = "Show More"
+// function change(){
+//     noMore.innerHTML = "Show More"
+// }
 
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
+
+// function zoom(e){
+//     if(e.type=='mouseover'){
+//         this.style.fontsize="large";
+//     }else{
+//         this.style.fontsize='small'
+//     }
+// }
+
+
+// var fontSize = document.getElementById('biggie');
+// fontSize.onmouseout=dohover;
+// fontSize.onmouseover=dohover;
 
 
 //4. McDonalds
