@@ -40,18 +40,19 @@ function lessContent(){
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
-// function zoom(e){
-//     if(e.type=='mouseover'){
-//         this.style.fontsize="large";
-//     }else{
-//         this.style.fontsize='small'
-//     }
-// }
+biggie.addEventListener("onmousemove", zoom)
+
+var pBiggie = document.getElementById('biggie');
+
+ function zoom() {
+     if(pBiggie.style.display==='block'){
+      pBiggie.style.fontSize = "150%";
+     }else{
+         pBiggie.style.display = 'block';
+     }
+}
 
 
-// var fontSize = document.getElementById('biggie');
-// fontSize.onmouseout=dohover;
-// fontSize.onmouseover=dohover;
 
 
 //4. McDonalds
@@ -78,8 +79,10 @@ function valuMenu(){
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
 
+
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
+
 
 
 //7. Mr. Buttons
